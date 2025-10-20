@@ -1,0 +1,127 @@
+/* --- style.css --- */
+
+/* 1. RESET GLOBAL E ESTILOS DO BODY */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  
+  /* --- O SEU DEGRADÊ CUSTOMIZADO --- */
+  background-image: linear-gradient(
+    to bottom,
+    #f4f4f4 60%,
+    #eb9e91 100%
+  );
+  
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  
+  color: #333; /* <-- PONTO-E-VÍRGULA CORRIGIDO */
+  line-height: 1.6;
+} /* <-- CHAVE DO BODY FECHADA CORRETAMENTE */
+
+/* 2. LAYOUT PRINCIPAL E CABEÇALHO */
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+header img {
+  max-width: 150px;
+  height: auto;
+}
+
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+main h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #eb9e91;
+}
+
+/* 3. MENU DE NAVEGAÇÃO */
+nav ul {
+  list-style: none;
+  padding: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav li {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* 4. ESTILOS DO FORMULÁRIO */
+form div {
+  margin-bottom: 15px;
+}
+
+label, h3 {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 5. BOTÃO */
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #27a745;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* 6. MENSAGEM DE RESULTADO */
+#mensagemResultado {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+} /* <-- CHAVE FECHADA NO LUGAR CERTO! */
+
+
+/* --- ESTILOS DAS OPÇÕES DE RÁDIO --- */
+/* (Agora eles estão do lado de FORA, no lugar certo) */
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px; 
+  padding: 15px; /* <-- Esse é o padding que você queria! */
+}
+
+legend {
+  font-weight: bold; /* <-- Esse é o negrito que você queria! */
+  margin-bottom: 5px; 
+}
